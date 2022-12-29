@@ -90,6 +90,15 @@ print(" -> All the cards have equal probability of being drawn.")
 print(" -> The computer is the dealer.")
 print(" \n     Let's Play! ")
 
-while input("\nDo you want to play a game of Blackjack? Type 'y' or 'n': ") == "y":
-    os.system('clear')
-    blackjack()
+# while input("\nDo you want to play a game of Blackjack? Type 'y' or 'n': ") == "y":
+#     os.system('clear')
+#     blackjack()
+
+while True:
+    game = input("\nDo you want to play a game of Blackjack? Type 'y' or 'n': ") 
+    if game == 'y':
+        os.system('clear')
+        blackjack()
+    else:
+        print("\nThanks for playing! :D")
+        break
